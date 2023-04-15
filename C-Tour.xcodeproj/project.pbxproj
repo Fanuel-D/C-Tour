@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		38A5D41829EB6B3D0056BF6B /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 38A5D41729EB6B3D0056BF6B /* ParseSwift */; };
+		38A5D41A29EB6F660056BF6B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A5D41929EB6F660056BF6B /* User.swift */; };
+		38A5D41C29EB6FA00056BF6B /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A5D41B29EB6FA00056BF6B /* Post.swift */; };
+		38A5D41E29EB6FC80056BF6B /* College.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A5D41D29EB6FC80056BF6B /* College.swift */; };
 		A04AF61529E9BBB90055A006 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04AF61429E9BBB90055A006 /* AppDelegate.swift */; };
 		A04AF61729E9BBB90055A006 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04AF61629E9BBB90055A006 /* SceneDelegate.swift */; };
 		A04AF61929E9BBB90055A006 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04AF61829E9BBB90055A006 /* ViewController.swift */; };
@@ -19,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		38A5D41929EB6F660056BF6B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		38A5D41B29EB6FA00056BF6B /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		38A5D41D29EB6FC80056BF6B /* College.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = College.swift; sourceTree = "<group>"; };
 		A04AF61129E9BBB90055A006 /* C-Tour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "C-Tour.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A04AF61429E9BBB90055A006 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A04AF61629E9BBB90055A006 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -62,6 +68,9 @@
 		A04AF61329E9BBB90055A006 /* C-Tour */ = {
 			isa = PBXGroup;
 			children = (
+				38A5D41929EB6F660056BF6B /* User.swift */,
+				38A5D41B29EB6FA00056BF6B /* Post.swift */,
+				38A5D41D29EB6FC80056BF6B /* College.swift */,
 				D5A2490B29EA1C89005FF668 /* LoginViewController.swift */,
 				A04AF61429E9BBB90055A006 /* AppDelegate.swift */,
 				A04AF61629E9BBB90055A006 /* SceneDelegate.swift */,
@@ -154,8 +163,11 @@
 			files = (
 				A04AF61929E9BBB90055A006 /* ViewController.swift in Sources */,
 				A04AF61529E9BBB90055A006 /* AppDelegate.swift in Sources */,
+				38A5D41A29EB6F660056BF6B /* User.swift in Sources */,
+				38A5D41E29EB6FC80056BF6B /* College.swift in Sources */,
 				A04AF61729E9BBB90055A006 /* SceneDelegate.swift in Sources */,
 				D5A2490C29EA1C89005FF668 /* LoginViewController.swift in Sources */,
+				38A5D41C29EB6FA00056BF6B /* Post.swift in Sources */,
 				A04AF61F29E9BBB90055A006 /* C_Tour.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

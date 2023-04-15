@@ -14,6 +14,7 @@
 		A04AF61F29E9BBB90055A006 /* C_Tour.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A04AF61D29E9BBB90055A006 /* C_Tour.xcdatamodeld */; };
 		A04AF62129E9BBBD0055A006 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A04AF62029E9BBBD0055A006 /* Assets.xcassets */; };
 		A04AF62429E9BBBD0055A006 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A04AF62229E9BBBD0055A006 /* LaunchScreen.storyboard */; };
+		D5A2490C29EA1C89005FF668 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A2490B29EA1C89005FF668 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		A04AF62029E9BBBD0055A006 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A04AF62329E9BBBD0055A006 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A04AF62529E9BBBD0055A006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D5A2490B29EA1C89005FF668 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		A04AF61329E9BBB90055A006 /* C-Tour */ = {
 			isa = PBXGroup;
 			children = (
+				D5A2490B29EA1C89005FF668 /* LoginViewController.swift */,
 				A04AF61429E9BBB90055A006 /* AppDelegate.swift */,
 				A04AF61629E9BBB90055A006 /* SceneDelegate.swift */,
 				A04AF61829E9BBB90055A006 /* ViewController.swift */,
@@ -144,6 +147,7 @@
 				A04AF61929E9BBB90055A006 /* ViewController.swift in Sources */,
 				A04AF61529E9BBB90055A006 /* AppDelegate.swift in Sources */,
 				A04AF61729E9BBB90055A006 /* SceneDelegate.swift in Sources */,
+				D5A2490C29EA1C89005FF668 /* LoginViewController.swift in Sources */,
 				A04AF61F29E9BBB90055A006 /* C_Tour.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

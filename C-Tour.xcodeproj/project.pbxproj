@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38A5D41829EB6B3D0056BF6B /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 38A5D41729EB6B3D0056BF6B /* ParseSwift */; };
 		A04AF61529E9BBB90055A006 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04AF61429E9BBB90055A006 /* AppDelegate.swift */; };
 		A04AF61729E9BBB90055A006 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04AF61629E9BBB90055A006 /* SceneDelegate.swift */; };
 		A04AF61929E9BBB90055A006 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04AF61829E9BBB90055A006 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38A5D41829EB6B3D0056BF6B /* ParseSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +91,9 @@
 			dependencies = (
 			);
 			name = "C-Tour";
+			packageProductDependencies = (
+				38A5D41729EB6B3D0056BF6B /* ParseSwift */,
+			);
 			productName = "C-Tour";
 			productReference = A04AF61129E9BBB90055A006 /* C-Tour.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +122,9 @@
 				Base,
 			);
 			mainGroup = A04AF60829E9BBB90055A006;
+			packageReferences = (
+				38A5D41629EB6B3D0056BF6B /* XCRemoteSwiftPackageReference "Parse-Swift" */,
+			);
 			productRefGroup = A04AF61229E9BBB90055A006 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -366,6 +374,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		38A5D41629EB6B3D0056BF6B /* XCRemoteSwiftPackageReference "Parse-Swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/parse-community/Parse-Swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		38A5D41729EB6B3D0056BF6B /* ParseSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 38A5D41629EB6B3D0056BF6B /* XCRemoteSwiftPackageReference "Parse-Swift" */;
+			productName = ParseSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		A04AF61D29E9BBB90055A006 /* C_Tour.xcdatamodeld */ = {

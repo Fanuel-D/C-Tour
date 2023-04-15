@@ -91,7 +91,7 @@ This app does what any tour guide can do but also more. It enables users to expl
 
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
+
 <img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
 ![](https://i.imgur.com/ZXRO1MW.jpg)
 

@@ -162,8 +162,10 @@
                         <constraints>
                             <constraint firstItem="vwo-EO-qsN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="9b3-X9-mLn"/>
                             <constraint firstItem="vwo-EO-qsN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="31" id="A7S-Ha-IYC"/>
+                            <constraint firstItem="vwo-EO-qsN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="HZI-Pd-KX0"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vwo-EO-qsN" secondAttribute="trailing" constant="35" id="Moe-WS-sRd"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vwo-EO-qsN" secondAttribute="bottom" constant="220.33000000000001" id="fRf-0C-ilB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vwo-EO-qsN" secondAttribute="trailing" constant="20" id="i0M-HN-Wtt"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="2HS-GS-s15"/>
@@ -336,10 +338,10 @@
             </objects>
             <point key="canvasLocation" x="850" y="674"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--TabNavigationController-->
         <scene sceneID="kTw-Hu-65R">
             <objects>
-                <tabBarController id="U9h-H5-qn8" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabNavigationController" title="TabNavigationController" id="U9h-H5-qn8" customClass="TabNavigationController" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Y4d-Ug-a8p">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>

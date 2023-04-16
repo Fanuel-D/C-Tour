@@ -63,6 +63,16 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		38A5D42429EB80650056BF6B /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D5A2490B29EA1C89005FF668 /* LoginViewController.swift */,
+				38A5D42229EB7ACF0056BF6B /* SignUpViewController.swift */,
+				38A5D42029EB7A740056BF6B /* ViewController Extensions.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
 		A04AF60829E9BBB90055A006 = {
 			isa = PBXGroup;
 			children = (
@@ -83,12 +93,10 @@
 			isa = PBXGroup;
 			children = (
 				38A5D41F29EB79870056BF6B /* Models */,
-				D5A2490B29EA1C89005FF668 /* LoginViewController.swift */,
-				38A5D42229EB7ACF0056BF6B /* SignUpViewController.swift */,
+				38A5D42429EB80650056BF6B /* View Controllers */,
 				A04AF61429E9BBB90055A006 /* AppDelegate.swift */,
 				A04AF61629E9BBB90055A006 /* SceneDelegate.swift */,
 				A04AF61829E9BBB90055A006 /* ViewController.swift */,
-				38A5D42029EB7A740056BF6B /* ViewController Extensions.swift */,
 				A04AF61A29E9BBB90055A006 /* Main.storyboard */,
 				A04AF62029E9BBBD0055A006 /* Assets.xcassets */,
 				A04AF62229E9BBBD0055A006 /* LaunchScreen.storyboard */,

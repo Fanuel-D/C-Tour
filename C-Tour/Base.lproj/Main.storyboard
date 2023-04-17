@@ -387,164 +387,175 @@
             </objects>
             <point key="canvasLocation" x="32.824427480916029" y="3.5211267605633805"/>
         </scene>
-        <!--View Controller-->
+        <!--SpotsViewController-->
         <scene sceneID="pvu-cm-JAz">
             <objects>
-                <viewController id="TbK-hH-l5w" sceneMemberID="viewController">
+                <viewController title="SpotsViewController" id="TbK-hH-l5w" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QLZ-xw-cJV">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Top Spots on Campus" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jZ-Nc-09d">
-                                <rect key="frame" x="16" y="253" width="308" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <metadata>
-                                    <string key="libraryAssetSourceID">Xcode.InterfaceBuilderKit.CocoaTouchIntegration.ObjectLibraryAssetProvider:IBUILabel</string>
-                                </metadata>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Label6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YB8-5b-zTJ">
-                                <rect key="frame" x="59" y="176" width="275" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <metadata>
-                                    <string key="libraryAssetSourceID">Xcode.InterfaceBuilderKit.CocoaTouchIntegration.ObjectLibraryAssetProvider:IBUILabel</string>
-                                </metadata>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" fixedFrame="YES" text="Label5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVg-as-iOz">
-                                <rect key="frame" x="170" y="205" width="52" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                                <metadata>
-                                    <string key="libraryAssetSourceID">Xcode.InterfaceBuilderKit.CocoaTouchIntegration.ObjectLibraryAssetProvider:IBUILabel</string>
-                                </metadata>
-                            </label>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zTy-RB-WP5" userLabel="View3">
-                                <rect key="frame" x="16" y="510" width="175" height="167"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="Fkb-M9-A2g" userLabel="Main View">
+                                <rect key="frame" x="12" y="112" width="365" height="578.33333333333337"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MTK-kc-GIV">
-                                        <rect key="frame" x="16" y="8" width="132" height="147.33333333333334"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HM6-S7-djF">
+                                        <rect key="frame" x="114.66666666666669" y="0.0" width="136" height="101"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" text="Label6" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YB8-5b-zTJ">
+                                        <rect key="frame" x="154" y="112" width="57.333333333333343" height="21.666666666666657"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <metadata>
+                                            <string key="libraryAssetSourceID">Xcode.InterfaceBuilderKit.CocoaTouchIntegration.ObjectLibraryAssetProvider:IBUILabel</string>
+                                        </metadata>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" text="Label5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pVg-as-iOz">
+                                        <rect key="frame" x="156.66666666666666" y="144.66666666666666" width="51.666666666666657" height="20.333333333333343"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <metadata>
+                                            <string key="libraryAssetSourceID">Xcode.InterfaceBuilderKit.CocoaTouchIntegration.ObjectLibraryAssetProvider:IBUILabel</string>
+                                        </metadata>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" text="Top Spots on Campus" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5jZ-Nc-09d">
+                                        <rect key="frame" x="94.333333333333329" y="176" width="176.66666666666669" height="21.666666666666657"/>
+                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                        <metadata>
+                                            <string key="libraryAssetSourceID">Xcode.InterfaceBuilderKit.CocoaTouchIntegration.ObjectLibraryAssetProvider:IBUILabel</string>
+                                        </metadata>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="mox-ht-s6x" userLabel="Stack View1">
+                                        <rect key="frame" x="0.0" y="208.66666666666663" width="365" height="179.33333333333337"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B94-VV-wvv">
-                                                <rect key="frame" x="0.0" y="0.0" width="132" height="119"/>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" text="Label3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nwr-AM-iPY">
-                                                <rect key="frame" x="40.333333333333343" y="126.99999999999999" width="51.666666666666657" height="20.333333333333329"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                                <metadata>
-                                                    <string key="libraryAssetSourceID">Xcode.InterfaceBuilderKit.CocoaTouchIntegration.ObjectLibraryAssetProvider:IBUILabel</string>
-                                                </metadata>
-                                            </label>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0X2-MM-5d8" userLabel="View1">
+                                                <rect key="frame" x="0.0" y="0.0" width="175" height="179.33333333333334"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hkI-8e-vHn">
+                                                        <rect key="frame" x="16" y="10" width="143" height="147.33333333333334"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y8F-lr-S2u">
+                                                                <rect key="frame" x="5.6666666666666714" y="0.0" width="132" height="119"/>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" text="Label1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkE-oP-W04">
+                                                                <rect key="frame" x="47" y="127.00000000000001" width="49" height="20.333333333333329"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <metadata>
+                                                                    <string key="libraryAssetSourceID">Xcode.InterfaceBuilderKit.CocoaTouchIntegration.ObjectLibraryAssetProvider:IBUILabel</string>
+                                                                </metadata>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="hkI-8e-vHn" secondAttribute="bottom" constant="16" id="NCo-cG-L6m"/>
+                                                    <constraint firstItem="hkI-8e-vHn" firstAttribute="top" secondItem="0X2-MM-5d8" secondAttribute="top" constant="16" id="jrP-2l-m9f"/>
+                                                    <constraint firstItem="hkI-8e-vHn" firstAttribute="leading" secondItem="0X2-MM-5d8" secondAttribute="leading" constant="16" id="kA9-Wt-nZE"/>
+                                                    <constraint firstAttribute="trailing" secondItem="hkI-8e-vHn" secondAttribute="trailing" constant="16" id="qit-PW-SLI"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lDT-kS-lvF" userLabel="View2">
+                                                <rect key="frame" x="190" y="0.0" width="175" height="179.33333333333334"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gZu-BL-LQV">
+                                                        <rect key="frame" x="16" y="8" width="143" height="147.33333333333334"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eqi-jv-ceC">
+                                                                <rect key="frame" x="5.6666666666666572" y="0.0" width="132" height="119"/>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" text="Label2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBs-jZ-paZ">
+                                                                <rect key="frame" x="46" y="127.00000000000001" width="51.333333333333343" height="20.333333333333329"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <metadata>
+                                                                    <string key="libraryAssetSourceID">Xcode.InterfaceBuilderKit.CocoaTouchIntegration.ObjectLibraryAssetProvider:IBUILabel</string>
+                                                                </metadata>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                <constraints>
+                                                    <constraint firstItem="gZu-BL-LQV" firstAttribute="top" secondItem="lDT-kS-lvF" secondAttribute="top" constant="16" id="bOs-U4-3YO"/>
+                                                    <constraint firstAttribute="bottom" secondItem="gZu-BL-LQV" secondAttribute="bottom" constant="16" id="maA-Bd-zb3"/>
+                                                    <constraint firstItem="gZu-BL-LQV" firstAttribute="leading" secondItem="lDT-kS-lvF" secondAttribute="leading" constant="16" id="ta3-m8-bhZ"/>
+                                                    <constraint firstAttribute="trailing" secondItem="gZu-BL-LQV" secondAttribute="trailing" constant="16" id="vbl-RK-FTG"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="BKl-v7-naw" userLabel="Stack View2">
+                                        <rect key="frame" x="0.0" y="399" width="365" height="179.33333333333337"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zTy-RB-WP5" userLabel="View3">
+                                                <rect key="frame" x="0.0" y="0.0" width="175" height="179.33333333333334"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="MTK-kc-GIV">
+                                                        <rect key="frame" x="16" y="8" width="143" height="147.33333333333334"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="B94-VV-wvv">
+                                                                <rect key="frame" x="5.6666666666666714" y="0.0" width="132" height="119"/>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" text="Label3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nwr-AM-iPY">
+                                                                <rect key="frame" x="45.666666666666671" y="126.99999999999999" width="51.666666666666671" height="20.333333333333329"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <metadata>
+                                                                    <string key="libraryAssetSourceID">Xcode.InterfaceBuilderKit.CocoaTouchIntegration.ObjectLibraryAssetProvider:IBUILabel</string>
+                                                                </metadata>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                <constraints>
+                                                    <constraint firstItem="MTK-kc-GIV" firstAttribute="top" secondItem="zTy-RB-WP5" secondAttribute="top" constant="16" id="5UV-tq-VZC"/>
+                                                    <constraint firstItem="MTK-kc-GIV" firstAttribute="leading" secondItem="zTy-RB-WP5" secondAttribute="leading" constant="16" id="9gk-oF-Rv8"/>
+                                                    <constraint firstAttribute="trailing" secondItem="MTK-kc-GIV" secondAttribute="trailing" constant="16" id="kBy-9f-VPL"/>
+                                                    <constraint firstAttribute="bottom" secondItem="MTK-kc-GIV" secondAttribute="bottom" constant="16" id="srk-np-4Am"/>
+                                                </constraints>
+                                            </view>
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vFT-YV-ESg" userLabel="View4">
+                                                <rect key="frame" x="190" y="0.0" width="175" height="179.33333333333334"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ezU-5l-hgN">
+                                                        <rect key="frame" x="16" y="8" width="143" height="147.33333333333334"/>
+                                                        <subviews>
+                                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2ty-jO-iSY">
+                                                                <rect key="frame" x="5.6666666666666572" y="0.0" width="132" height="119"/>
+                                                            </imageView>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" text="Label4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPP-Gi-opI">
+                                                                <rect key="frame" x="45.666666666666657" y="126.99999999999999" width="52" height="20.333333333333329"/>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                                <metadata>
+                                                                    <string key="libraryAssetSourceID">Xcode.InterfaceBuilderKit.CocoaTouchIntegration.ObjectLibraryAssetProvider:IBUILabel</string>
+                                                                </metadata>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                <constraints>
+                                                    <constraint firstItem="ezU-5l-hgN" firstAttribute="leading" secondItem="vFT-YV-ESg" secondAttribute="leading" constant="16" id="5SR-Lh-Njo"/>
+                                                    <constraint firstItem="ezU-5l-hgN" firstAttribute="top" secondItem="vFT-YV-ESg" secondAttribute="top" constant="16" id="A7W-la-Tq1"/>
+                                                    <constraint firstAttribute="bottom" secondItem="ezU-5l-hgN" secondAttribute="bottom" constant="16" id="Is7-L3-tl4"/>
+                                                    <constraint firstAttribute="trailing" secondItem="ezU-5l-hgN" secondAttribute="trailing" constant="16" id="zqI-O1-4fG"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemGray4Color"/>
-                                <constraints>
-                                    <constraint firstItem="MTK-kc-GIV" firstAttribute="top" secondItem="zTy-RB-WP5" secondAttribute="top" constant="16" id="5UV-tq-VZC"/>
-                                    <constraint firstItem="MTK-kc-GIV" firstAttribute="leading" secondItem="zTy-RB-WP5" secondAttribute="leading" constant="16" id="9gk-oF-Rv8"/>
-                                    <constraint firstAttribute="trailing" secondItem="MTK-kc-GIV" secondAttribute="trailing" constant="16" id="kBy-9f-VPL"/>
-                                    <constraint firstAttribute="bottom" secondItem="MTK-kc-GIV" secondAttribute="bottom" constant="16" id="srk-np-4Am"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vFT-YV-ESg" userLabel="View4">
-                                <rect key="frame" x="206" y="510" width="175" height="167"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ezU-5l-hgN">
-                                        <rect key="frame" x="16" y="8" width="132" height="147.33333333333334"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2ty-jO-iSY">
-                                                <rect key="frame" x="0.0" y="0.0" width="132" height="119"/>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" text="Label4" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CPP-Gi-opI">
-                                                <rect key="frame" x="40" y="126.99999999999999" width="52" height="20.333333333333329"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                                <metadata>
-                                                    <string key="libraryAssetSourceID">Xcode.InterfaceBuilderKit.CocoaTouchIntegration.ObjectLibraryAssetProvider:IBUILabel</string>
-                                                </metadata>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemGray4Color"/>
-                                <constraints>
-                                    <constraint firstItem="ezU-5l-hgN" firstAttribute="leading" secondItem="vFT-YV-ESg" secondAttribute="leading" constant="16" id="5SR-Lh-Njo"/>
-                                    <constraint firstItem="ezU-5l-hgN" firstAttribute="top" secondItem="vFT-YV-ESg" secondAttribute="top" constant="16" id="A7W-la-Tq1"/>
-                                    <constraint firstAttribute="bottom" secondItem="ezU-5l-hgN" secondAttribute="bottom" constant="16" id="Is7-L3-tl4"/>
-                                    <constraint firstAttribute="trailing" secondItem="ezU-5l-hgN" secondAttribute="trailing" constant="16" id="zqI-O1-4fG"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0X2-MM-5d8" userLabel="View1">
-                                <rect key="frame" x="16" y="318" width="175" height="167"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hkI-8e-vHn">
-                                        <rect key="frame" x="16" y="10" width="132" height="147.33333333333334"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Y8F-lr-S2u">
-                                                <rect key="frame" x="0.0" y="0.0" width="132" height="119"/>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" text="Label1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dkE-oP-W04">
-                                                <rect key="frame" x="41.666666666666657" y="126.99999999999999" width="49" height="20.333333333333329"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                                <metadata>
-                                                    <string key="libraryAssetSourceID">Xcode.InterfaceBuilderKit.CocoaTouchIntegration.ObjectLibraryAssetProvider:IBUILabel</string>
-                                                </metadata>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemGray4Color"/>
-                                <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="hkI-8e-vHn" secondAttribute="bottom" constant="16" id="NCo-cG-L6m"/>
-                                    <constraint firstItem="hkI-8e-vHn" firstAttribute="top" secondItem="0X2-MM-5d8" secondAttribute="top" constant="16" id="jrP-2l-m9f"/>
-                                    <constraint firstItem="hkI-8e-vHn" firstAttribute="leading" secondItem="0X2-MM-5d8" secondAttribute="leading" constant="16" id="kA9-Wt-nZE"/>
-                                    <constraint firstAttribute="trailing" secondItem="hkI-8e-vHn" secondAttribute="trailing" constant="16" id="qit-PW-SLI"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lDT-kS-lvF" userLabel="View2">
-                                <rect key="frame" x="206" y="318" width="175" height="167"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gZu-BL-LQV">
-                                        <rect key="frame" x="16" y="8" width="132" height="147.33333333333334"/>
-                                        <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eqi-jv-ceC">
-                                                <rect key="frame" x="0.0" y="0.0" width="132" height="119"/>
-                                            </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" ambiguous="YES" text="Label2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aBs-jZ-paZ">
-                                                <rect key="frame" x="40.333333333333329" y="126.99999999999999" width="51.333333333333329" height="20.333333333333329"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <nil key="textColor"/>
-                                                <nil key="highlightedColor"/>
-                                                <metadata>
-                                                    <string key="libraryAssetSourceID">Xcode.InterfaceBuilderKit.CocoaTouchIntegration.ObjectLibraryAssetProvider:IBUILabel</string>
-                                                </metadata>
-                                            </label>
-                                        </subviews>
-                                    </stackView>
-                                </subviews>
-                                <color key="backgroundColor" systemColor="systemGray4Color"/>
-                                <constraints>
-                                    <constraint firstItem="gZu-BL-LQV" firstAttribute="top" secondItem="lDT-kS-lvF" secondAttribute="top" constant="16" id="bOs-U4-3YO"/>
-                                    <constraint firstAttribute="bottom" secondItem="gZu-BL-LQV" secondAttribute="bottom" constant="16" id="maA-Bd-zb3"/>
-                                    <constraint firstItem="gZu-BL-LQV" firstAttribute="leading" secondItem="lDT-kS-lvF" secondAttribute="leading" constant="16" id="ta3-m8-bhZ"/>
-                                    <constraint firstAttribute="trailing" secondItem="gZu-BL-LQV" secondAttribute="trailing" constant="16" id="vbl-RK-FTG"/>
-                                </constraints>
-                            </view>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HM6-S7-djF">
-                                <rect key="frame" x="136" y="67" width="136" height="101"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="mvo-HN-aC6"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>

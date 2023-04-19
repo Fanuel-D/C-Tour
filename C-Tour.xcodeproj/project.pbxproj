@@ -13,14 +13,13 @@
 		38A5D41E29EB6FC80056BF6B /* College.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A5D41D29EB6FC80056BF6B /* College.swift */; };
 		38A5D42129EB7A740056BF6B /* ViewController Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A5D42029EB7A740056BF6B /* ViewController Extensions.swift */; };
 		38A5D42329EB7ACF0056BF6B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A5D42229EB7ACF0056BF6B /* SignUpViewController.swift */; };
+		A033CB9829F08CBA0042F72C /* TourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A033CB9729F08CBA0042F72C /* TourViewController.swift */; };
 		A04AF61529E9BBB90055A006 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04AF61429E9BBB90055A006 /* AppDelegate.swift */; };
 		A04AF61729E9BBB90055A006 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04AF61629E9BBB90055A006 /* SceneDelegate.swift */; };
-		A04AF61929E9BBB90055A006 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04AF61829E9BBB90055A006 /* ViewController.swift */; };
 		A04AF61C29E9BBB90055A006 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A04AF61A29E9BBB90055A006 /* Main.storyboard */; };
 		A04AF61F29E9BBB90055A006 /* C_Tour.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A04AF61D29E9BBB90055A006 /* C_Tour.xcdatamodeld */; };
 		A04AF62129E9BBBD0055A006 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A04AF62029E9BBBD0055A006 /* Assets.xcassets */; };
 		A04AF62429E9BBBD0055A006 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A04AF62229E9BBBD0055A006 /* LaunchScreen.storyboard */; };
-		A05FC23629EE24890027D458 /* TourViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05FC23529EE24890027D458 /* TourViewController.swift */; };
 		A05FC23829EF923F0027D458 /* SpotsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05FC23729EF923F0027D458 /* SpotsViewController.swift */; };
 		D5A2490C29EA1C89005FF668 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A2490B29EA1C89005FF668 /* LoginViewController.swift */; };
 /* End PBXBuildFile section */
@@ -31,16 +30,15 @@
 		38A5D41D29EB6FC80056BF6B /* College.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = College.swift; sourceTree = "<group>"; };
 		38A5D42029EB7A740056BF6B /* ViewController Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController Extensions.swift"; sourceTree = "<group>"; };
 		38A5D42229EB7ACF0056BF6B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		A033CB9729F08CBA0042F72C /* TourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourViewController.swift; sourceTree = "<group>"; };
 		A04AF61129E9BBB90055A006 /* C-Tour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "C-Tour.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A04AF61429E9BBB90055A006 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A04AF61629E9BBB90055A006 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A04AF61829E9BBB90055A006 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A04AF61B29E9BBB90055A006 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A04AF61E29E9BBB90055A006 /* C_Tour.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = C_Tour.xcdatamodel; sourceTree = "<group>"; };
 		A04AF62029E9BBBD0055A006 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A04AF62329E9BBBD0055A006 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A04AF62529E9BBBD0055A006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A05FC23529EE24890027D458 /* TourViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourViewController.swift; sourceTree = "<group>"; };
 		A05FC23729EF923F0027D458 /* SpotsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotsViewController.swift; sourceTree = "<group>"; };
 		D5A2490B29EA1C89005FF668 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -73,8 +71,8 @@
 				D5A2490B29EA1C89005FF668 /* LoginViewController.swift */,
 				38A5D42229EB7ACF0056BF6B /* SignUpViewController.swift */,
 				38A5D42029EB7A740056BF6B /* ViewController Extensions.swift */,
-				A05FC23529EE24890027D458 /* TourViewController.swift */,
 				A05FC23729EF923F0027D458 /* SpotsViewController.swift */,
+				A033CB9729F08CBA0042F72C /* TourViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -102,7 +100,6 @@
 				38A5D42429EB80650056BF6B /* View Controllers */,
 				A04AF61429E9BBB90055A006 /* AppDelegate.swift */,
 				A04AF61629E9BBB90055A006 /* SceneDelegate.swift */,
-				A04AF61829E9BBB90055A006 /* ViewController.swift */,
 				A04AF61A29E9BBB90055A006 /* Main.storyboard */,
 				A04AF62029E9BBBD0055A006 /* Assets.xcassets */,
 				A04AF62229E9BBBD0055A006 /* LaunchScreen.storyboard */,
@@ -190,11 +187,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A05FC23829EF923F0027D458 /* SpotsViewController.swift in Sources */,
-				A04AF61929E9BBB90055A006 /* ViewController.swift in Sources */,
 				A04AF61529E9BBB90055A006 /* AppDelegate.swift in Sources */,
 				38A5D41A29EB6F660056BF6B /* User.swift in Sources */,
+				A033CB9829F08CBA0042F72C /* TourViewController.swift in Sources */,
 				38A5D42129EB7A740056BF6B /* ViewController Extensions.swift in Sources */,
-				A05FC23629EE24890027D458 /* TourViewController.swift in Sources */,
 				38A5D42329EB7ACF0056BF6B /* SignUpViewController.swift in Sources */,
 				38A5D41E29EB6FC80056BF6B /* College.swift in Sources */,
 				A04AF61729E9BBB90055A006 /* SceneDelegate.swift in Sources */,

@@ -21,6 +21,9 @@
 		A04AF62129E9BBBD0055A006 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A04AF62029E9BBBD0055A006 /* Assets.xcassets */; };
 		A04AF62429E9BBBD0055A006 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A04AF62229E9BBBD0055A006 /* LaunchScreen.storyboard */; };
 		A05FC23829EF923F0027D458 /* SpotsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A05FC23729EF923F0027D458 /* SpotsViewController.swift */; };
+		D53BC19B29F2A8DB00796BE1 /* CampusViewControlllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53BC19A29F2A8DB00796BE1 /* CampusViewControlllerViewController.swift */; };
+		D53BC19D29F2A91400796BE1 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53BC19C29F2A91400796BE1 /* SearchCell.swift */; };
+		D53BC19F29F2AB8C00796BE1 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53BC19E29F2AB8C00796BE1 /* PostViewController.swift */; };
 		D5A2490C29EA1C89005FF668 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A2490B29EA1C89005FF668 /* LoginViewController.swift */; };
 		D5AFA52A29F0DDDD00E6662E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AFA52929F0DDDD00E6662E /* HomeViewController.swift */; };
 		D5AFA52E29F0E22900E6662E /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AFA52D29F0E22900E6662E /* PostCell.swift */; };
@@ -42,6 +45,9 @@
 		A04AF62329E9BBBD0055A006 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A04AF62529E9BBBD0055A006 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A05FC23729EF923F0027D458 /* SpotsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotsViewController.swift; sourceTree = "<group>"; };
+		D53BC19A29F2A8DB00796BE1 /* CampusViewControlllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusViewControlllerViewController.swift; sourceTree = "<group>"; };
+		D53BC19C29F2A91400796BE1 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
+		D53BC19E29F2AB8C00796BE1 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		D5A2490B29EA1C89005FF668 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		D5AFA52929F0DDDD00E6662E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D5AFA52D29F0E22900E6662E /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
@@ -78,6 +84,8 @@
 				38A5D42029EB7A740056BF6B /* ViewController Extensions.swift */,
 				A05FC23729EF923F0027D458 /* SpotsViewController.swift */,
 				A033CB9729F08CBA0042F72C /* TourViewController.swift */,
+				D53BC19A29F2A8DB00796BE1 /* CampusViewControlllerViewController.swift */,
+				D53BC19E29F2AB8C00796BE1 /* PostViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -106,6 +114,7 @@
 				A04AF61429E9BBB90055A006 /* AppDelegate.swift */,
 				A04AF61629E9BBB90055A006 /* SceneDelegate.swift */,
 				A04AF61A29E9BBB90055A006 /* Main.storyboard */,
+				D53BC19C29F2A91400796BE1 /* SearchCell.swift */,
 				D5AFA52D29F0E22900E6662E /* PostCell.swift */,
 				A04AF62029E9BBBD0055A006 /* Assets.xcassets */,
 				A04AF62229E9BBBD0055A006 /* LaunchScreen.storyboard */,
@@ -193,12 +202,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A05FC23829EF923F0027D458 /* SpotsViewController.swift in Sources */,
+				D53BC19D29F2A91400796BE1 /* SearchCell.swift in Sources */,
 				A04AF61529E9BBB90055A006 /* AppDelegate.swift in Sources */,
 				D5AFA52E29F0E22900E6662E /* PostCell.swift in Sources */,
 				38A5D41A29EB6F660056BF6B /* User.swift in Sources */,
 				A033CB9829F08CBA0042F72C /* TourViewController.swift in Sources */,
 				38A5D42129EB7A740056BF6B /* ViewController Extensions.swift in Sources */,
 				38A5D42329EB7ACF0056BF6B /* SignUpViewController.swift in Sources */,
+				D53BC19F29F2AB8C00796BE1 /* PostViewController.swift in Sources */,
+				D53BC19B29F2A8DB00796BE1 /* CampusViewControlllerViewController.swift in Sources */,
 				38A5D41E29EB6FC80056BF6B /* College.swift in Sources */,
 				A04AF61729E9BBB90055A006 /* SceneDelegate.swift in Sources */,
 				D5A2490C29EA1C89005FF668 /* LoginViewController.swift in Sources */,

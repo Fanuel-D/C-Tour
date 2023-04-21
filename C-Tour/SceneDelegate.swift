@@ -14,6 +14,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         static let storyboardIdentifier = "Main"
         static let tourNavigationController = "TourNavigationController"
         static let spotsNavigationController = "SpotsNavigationController"
+        static let postViewController = "PostViewController"
+        static let campusViewController = "CampusViewController"
 
         
         
@@ -43,7 +45,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     private func login() {
         let storyboard = UIStoryboard(name: Constants.storyboardIdentifier, bundle: nil)
-        self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: Constants.tourNavigationController)
+        self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: Constants.postViewController)
     }
 
 

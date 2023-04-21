@@ -1,28 +1,27 @@
 //
-//  SpotsViewController.swift
+//  HopeViewController.swift
 //  C-Tour
 //
-//  Created by Fanuel Dana on 4/18/23.
+//  Created by Fanuel Dana on 4/21/23.
 //
 
 import UIKit
 
-class SpotsViewController: UIViewController {
+class HopeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
-
     
-    @IBAction func hello(_ sender: UITapGestureRecognizer) {
+    @IBOutlet weak var imageView: UIImageView!
+    
+    @IBAction func didTapLabel(_ sender: UITapGestureRecognizer) {
         if let tappedView = sender.view {
-            performSegue(withIdentifier: "detailSegue", sender: tappedView)
+            performSegue(withIdentifier: "mySegue", sender: tappedView)
         }
     }
-    
-    
     /*
     // MARK: - Navigation
 

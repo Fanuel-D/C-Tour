@@ -19,9 +19,10 @@ class HopeViewController: UIViewController {
     
     @IBAction func didTapLabel(_ sender: UITapGestureRecognizer) {
         if let tappedView = sender.view {
-            performSegue(withIdentifier: "mySegue", sender: tappedView)
+            performSegue(withIdentifier: "theSegue", sender: tappedView)
         }
     }
+   
     /*
     // MARK: - Navigation
 

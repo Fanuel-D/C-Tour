@@ -60,7 +60,7 @@ class CampusViewController: UIViewController, UITableViewDataSource, UITableView
             cell.schoolLabel.text = college.name
             cell.locationLabel.text = college.location
             cell.logo.image = college.logopic
-            print("Hello")
+            
         }
         return cell
     }

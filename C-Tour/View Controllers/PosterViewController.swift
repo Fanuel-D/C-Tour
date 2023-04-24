@@ -9,13 +9,15 @@ import UIKit
 import ParseSwift
 import PhotosUI
 
-class PosterViewController: UIViewController {
+class PosterViewController: UIViewController{
 
+    @IBOutlet weak var cameraButton: UIButton!
     @IBOutlet weak var postButton: UIButton!
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var choosePhotoButton: UIButton!
     private var pickedImage: UIImage?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -40,6 +42,29 @@ class PosterViewController: UIViewController {
     }
     
     
+    @IBAction func onTakePhotoTapped(_ sender: UIBarButtonItem) {
+        // Make sure the user's camera is available
+        // NOTE: Camera only available on physical iOS device, not available on simulator.
+        guard UIImagePickerController.isSourceTypeAvailable(.camera) else {
+            print("❌📷 Camera not available")
+            return
+        }
+
+        // Instantiate the image picker
+        let imagePicker = UIImagePickerController()
+
+        // Shows the camera (vs the photo library)
+        imagePicker.sourceType = .camera
+
+
+        imagePicker.allowsEditing = true
+
+        imagePicker.delegate = self
+
+        // Present the image picker (camera)
+        present(imagePicker, animated: true)
+    }
+    
     /*
     // MARK: - Navigation
 
@@ -49,8 +74,28 @@ class PosterViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
+
 
 }
+extension PosterViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+
+        // Dismiss the image picker
+        picker.dismiss(animated: true)
+
+        guard let image = info[.editedImage] as? UIImage else {
+            print("❌📷 Unable to get image")
+            return
+        }
+        imageView.image = image
+        pickedImage = image
+        
+    }
+
+}
+
 extension PosterViewController: PHPickerViewControllerDelegate {
 
 
@@ -89,3 +134,4 @@ extension PosterViewController: PHPickerViewControllerDelegate {
         }
     }
 }
+

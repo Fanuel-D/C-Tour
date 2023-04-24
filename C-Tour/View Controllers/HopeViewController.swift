@@ -16,14 +16,9 @@ class HopeViewController: UIViewController {
     }
     
 
-    @IBAction func hopeDetailSegue(_ sender: UITapGestureRecognizer) {
+    @IBAction func add(_ sender: UIBarButtonItem) {
         
-        if let tappedView = sender.view {
-            performSegue(withIdentifier: "hopeDetailSegue", sender: tappedView)
-            
-            
-            
-        }
+        performSegue(withIdentifier: "trueSegue", sender: self)
     }
     
     

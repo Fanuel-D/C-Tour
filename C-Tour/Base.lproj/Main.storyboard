@@ -545,7 +545,7 @@
             <objects>
                 <viewController storyboardIdentifier="HopeViewController" id="BGq-vs-QPp" customClass="HopeViewController" customModule="C_Tour" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" ambiguous="YES" id="BsW-oc-JPK">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Yd6-Oz-u7v">
@@ -819,7 +819,7 @@
             <objects>
                 <viewController id="JRB-3v-eWM" customClass="CorrectViewController" customModule="C_Tour" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IsH-kZ-rVf">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MBj-vm-pe2">
@@ -871,7 +871,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Rz-4S-3Va" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7904.5801526717551" y="724.64788732394368"/>
+            <point key="canvasLocation" x="7126" y="1745"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Fyj-S2-Xl0">
@@ -926,7 +926,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WTZ-pC-rne" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4971.7557251908393" y="724.64788732394368"/>
+            <point key="canvasLocation" x="4639" y="367"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xhG-CJ-QUs">
@@ -945,50 +945,16 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mEG-6y-46h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5968.7022900763359" y="724.64788732394368"/>
+            <point key="canvasLocation" x="5828" y="386"/>
         </scene>
         <!--Poster View Controller-->
         <scene sceneID="HvH-Sn-yvq">
             <objects>
                 <viewController id="YdC-f2-u9H" customClass="PosterViewController" customModule="C_Tour" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eND-st-lQT">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="euX-yq-PTY">
-                                <rect key="frame" x="0.0" y="200.33333333333331" width="393" height="534.66666666666674"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TZ9-mQ-a97">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="34.333333333333336"/>
-                                        <subviews>
-                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsR-cp-VBd">
-                                                <rect key="frame" x="0.0" y="0.0" width="393" height="34.333333333333336"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Choose a photo"/>
-                                                <connections>
-                                                    <action selector="onPickImageTapped:" destination="YdC-f2-u9H" eventType="touchUpInside" id="bYf-1a-rgu"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zCr-m8-o2r">
-                                        <rect key="frame" x="0.0" y="47.333333333333314" width="393" height="393"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="zCr-m8-o2r" secondAttribute="height" multiplier="1:1" id="Tq9-fN-Ulg"/>
-                                        </constraints>
-                                    </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write a caption" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="3Gf-9H-fvH">
-                                        <rect key="frame" x="0.0" y="453.33333333333326" width="393" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mba-UF-RG2">
-                                        <rect key="frame" x="0.0" y="500.3333333333332" width="393" height="34.333333333333314"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Post"/>
-                                    </button>
-                                </subviews>
-                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TIE-Fj-1fM">
                                 <rect key="frame" x="16" y="574.66666666666663" width="125.66666666666669" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -997,17 +963,65 @@
                                 <rect key="frame" x="16" y="634.66666666666652" width="58" height="34.333333333333371"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="zW4-Vx-idz">
+                                <rect key="frame" x="0.0" y="123" width="393" height="586"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RYR-6h-Phu">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="34.333333333333336"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jOJ-Yo-etm">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Open Camera"/>
+                                                <connections>
+                                                    <action selector="onTakePhotoTapped:" destination="YdC-f2-u9H" eventType="touchUpInside" id="iy9-Mr-Q6u"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TZ9-mQ-a97">
+                                        <rect key="frame" x="0.0" y="48.333333333333343" width="393" height="34.333333333333343"/>
+                                        <subviews>
+                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsR-cp-VBd">
+                                                <rect key="frame" x="0.0" y="0.0" width="393" height="34.333333333333336"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Choose from gallery"/>
+                                                <connections>
+                                                    <action selector="onPickImageTapped:" destination="YdC-f2-u9H" eventType="touchUpInside" id="bYf-1a-rgu"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zCr-m8-o2r">
+                                        <rect key="frame" x="0.0" y="96.666666666666629" width="393" height="393"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="zCr-m8-o2r" secondAttribute="height" multiplier="1:1" id="Tq9-fN-Ulg"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write a caption" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="3Gf-9H-fvH">
+                                        <rect key="frame" x="0.0" y="503.66666666666663" width="393" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mba-UF-RG2">
+                                        <rect key="frame" x="0.0" y="551.66666666666663" width="393" height="34.333333333333371"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Post"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Hqd-gA-cHE"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="Hqd-gA-cHE" firstAttribute="bottom" secondItem="euX-yq-PTY" secondAttribute="bottom" constant="107" id="IVr-p2-eSA"/>
-                            <constraint firstAttribute="trailing" secondItem="euX-yq-PTY" secondAttribute="trailing" id="K7B-UM-aGh"/>
-                            <constraint firstItem="euX-yq-PTY" firstAttribute="leading" secondItem="Hqd-gA-cHE" secondAttribute="leading" id="Zqb-lx-M7T"/>
+                            <constraint firstAttribute="trailing" secondItem="zW4-Vx-idz" secondAttribute="trailing" id="f5s-qa-kSe"/>
+                            <constraint firstItem="Hqd-gA-cHE" firstAttribute="bottom" secondItem="zW4-Vx-idz" secondAttribute="bottom" constant="109" id="h38-89-eQj"/>
+                            <constraint firstItem="zW4-Vx-idz" firstAttribute="leading" secondItem="Hqd-gA-cHE" secondAttribute="leading" id="tmg-Jk-Nj6"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="SiU-Kw-Vnm"/>
                     <connections>
+                        <outlet property="cameraButton" destination="jOJ-Yo-etm" id="Icx-ke-0Tx"/>
                         <outlet property="choosePhotoButton" destination="fsR-cp-VBd" id="qIW-te-oKH"/>
                         <outlet property="imageView" destination="zCr-m8-o2r" id="1HZ-3I-5Gt"/>
                         <outlet property="postButton" destination="mba-UF-RG2" id="O43-nh-unj"/>
@@ -1016,18 +1030,18 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F8s-94-JvF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7823.6641221374039" y="1443.661971830986"/>
+            <point key="canvasLocation" x="7126" y="985"/>
         </scene>
         <!--Hope Detail View Controller-->
         <scene sceneID="gak-eu-p01">
             <objects>
                 <viewController id="snE-ls-pkJ" customClass="HopeDetailViewController" customModule="C_Tour" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Skh-K9-osA">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gJe-J6-yeu">
-                                <rect key="frame" x="54" y="121" width="279" height="253"/>
+                                <rect key="frame" x="0.0" y="67" width="393" height="307"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BB9-EA-i91">
@@ -1079,7 +1093,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4xr-Uq-leq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="8518.3206106870221" y="1452.8169014084508"/>
+            <point key="canvasLocation" x="7125.9541984732823" y="2517.605633802817"/>
         </scene>
         <!--Campuses-->
         <scene sceneID="dk1-w6-Ff5">
@@ -1103,7 +1117,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="8aM-5q-sEk"/>
+        <segue reference="FCe-CG-nVE"/>
         <segue reference="SOw-Xb-jcV"/>
     </inferredMetricsTieBreakers>
     <resources>

@@ -382,6 +382,8 @@
 				DEVELOPMENT_TEAM = 2BMP7UP965;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "C-Tour/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "\"Your Location is needed to provide a guided accurate service\"";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -410,6 +412,8 @@
 				DEVELOPMENT_TEAM = 2BMP7UP965;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "C-Tour/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "\"Your Location is needed to provide a guided accurate service\"";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

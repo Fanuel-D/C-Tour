@@ -8,7 +8,7 @@
 import UIKit
 import MapKit
 
-class CorrectViewController: UIViewController, MKMapViewDelegate {
+class CorrectViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,17 +22,28 @@ class CorrectViewController: UIViewController, MKMapViewDelegate {
         let location = locations[0]
         let coordinate = CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude)
         let span = MKCoordinateSpan(latitudeDelta: 0.004, longitudeDelta: 0.004)
-        let region = MKCoordinateRegion(center: coordinate, span: span)
+        //let region = MKCoordinateRegion(center: coordinate, span: span)
         let annotation = MKPointAnnotation()
         annotation.coordinate = coordinate
         annotation.title = location.imageName
-        mapy.setRegion(region, animated: true)
+//        mapy.setRegion(region, animated: true)
         mapy.addAnnotation(annotation)
+        
+        
+        
+        
+        
+        locationManager.delegate = self
+                
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
+                
+        mapy.showsUserLocation = true
         
         
         // Do any additional setup after loading the view.
     }
-   
+    let locationManager = CLLocationManager()
    
     @IBOutlet weak var wiser: UILabel!
     let locations = [
@@ -44,6 +55,15 @@ class CorrectViewController: UIViewController, MKMapViewDelegate {
         Location(imageName: "Beardsley", latitude: 39.90681467113786, longitude: -75.35472576116368),
         Location(imageName: "DCC", latitude: 39.903448676535184, longitude: -75.35378860475394)
     ]
+    
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+            guard let location = locations.last else { return }
+            
+            let region = MKCoordinateRegion(center: location.coordinate, latitudinalMeters: 1000, longitudinalMeters: 1000)
+            
+            mapy.setRegion(region, animated: true)
+        }
     
     
     
@@ -64,11 +84,11 @@ class CorrectViewController: UIViewController, MKMapViewDelegate {
                 let location = locations[1]
                 let coordinate = CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude)
                 let span = MKCoordinateSpan(latitudeDelta: 0.004, longitudeDelta: 0.004)
-                let region = MKCoordinateRegion(center: coordinate, span: span)
+                //let region = MKCoordinateRegion(center: coordinate, span: span)
                 let annotation = MKPointAnnotation()
                 annotation.coordinate = coordinate
                 annotation.title = location.imageName
-                mapy.setRegion(region, animated: true)
+                //mapy.setRegion(region, animated: true)
                 mapy.addAnnotation(annotation)
             
             
@@ -80,11 +100,11 @@ class CorrectViewController: UIViewController, MKMapViewDelegate {
             let location = locations[2]
             let coordinate = CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude)
             let span = MKCoordinateSpan(latitudeDelta: 0.0025, longitudeDelta: 0.0025)
-            let region = MKCoordinateRegion(center: coordinate, span: span)
+            //let region = MKCoordinateRegion(center: coordinate, span: span)
             let annotation = MKPointAnnotation()
             annotation.coordinate = coordinate
             annotation.title = location.imageName
-            mapy.setRegion(region, animated: true)
+            //mapy.setRegion(region, animated: true)
             mapy.addAnnotation(annotation)
         } else if tapCount == 3 {
             texter.text = "As the new home of Swarthmore’s engineering, biology, and psychology departments, Singer Hall affirms the college’s interdisciplinary values and supports their long-term strategic plan."
@@ -94,11 +114,11 @@ class CorrectViewController: UIViewController, MKMapViewDelegate {
             let location = locations[3]
             let coordinate = CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude)
             let span = MKCoordinateSpan(latitudeDelta: 0.0025, longitudeDelta: 0.0025)
-            let region = MKCoordinateRegion(center: coordinate, span: span)
+            //let region = MKCoordinateRegion(center: coordinate, span: span)
             let annotation = MKPointAnnotation()
             annotation.coordinate = coordinate
             annotation.title = location.imageName
-            mapy.setRegion(region, animated: true)
+            //mapy.setRegion(region, animated: true)
             mapy.addAnnotation(annotation)
         } else if tapCount == 4 {
             texter.text = "Wharton, centrally located and with beautiful views of the Crum and the amphitheater, is divided into three sections (AB, CD, and EF), CD houses only seniors. AB and EF house first-year student. "
@@ -108,11 +128,11 @@ class CorrectViewController: UIViewController, MKMapViewDelegate {
             let location = locations[4]
             let coordinate = CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude)
             let span = MKCoordinateSpan(latitudeDelta:0.0025, longitudeDelta: 0.0025)
-            let region = MKCoordinateRegion(center: coordinate, span: span)
+            //let region = MKCoordinateRegion(center: coordinate, span: span)
             let annotation = MKPointAnnotation()
             annotation.coordinate = coordinate
             annotation.title = location.imageName
-            mapy.setRegion(region, animated: true)
+            //mapy.setRegion(region, animated: true)
             mapy.addAnnotation(annotation)
         } else if tapCount == 5 {
             texter.text = "Built in 1906, Beardsley Hall was created using an architectural cutting-edge material technology: molded concrete blocks. Today, this unique structure is the home to an 1,100 sq ft painting studio.  In addition to the Art Office, you can also find faculty and staff’s offices."
@@ -122,11 +142,11 @@ class CorrectViewController: UIViewController, MKMapViewDelegate {
             let location = locations[5]
             let coordinate = CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude)
             let span = MKCoordinateSpan(latitudeDelta: 0.0025, longitudeDelta: 0.0025)
-            let region = MKCoordinateRegion(center: coordinate, span: span)
+            //let region = MKCoordinateRegion(center: coordinate, span: span)
             let annotation = MKPointAnnotation()
             annotation.coordinate = coordinate
             annotation.title = location.imageName
-            mapy.setRegion(region, animated: true)
+            //mapy.setRegion(region, animated: true)
             mapy.addAnnotation(annotation)
         } else if tapCount == 6 {
             texter.text = "Dining in community is at the heart of the College experience. Gathering to share a meal brings a chance to rest, share stories, and build lasting relationships with friends and colleagues. "
@@ -136,11 +156,11 @@ class CorrectViewController: UIViewController, MKMapViewDelegate {
             let location = locations[6]
             let coordinate = CLLocationCoordinate2D(latitude: location.latitude, longitude: location.longitude)
             let span = MKCoordinateSpan(latitudeDelta: 0.0025, longitudeDelta: 0.0025)
-            let region = MKCoordinateRegion(center: coordinate, span: span)
+            //let region = MKCoordinateRegion(center: coordinate, span: span)
             let annotation = MKPointAnnotation()
             annotation.coordinate = coordinate
             annotation.title = location.imageName
-            mapy.setRegion(region, animated: true)
+            //mapy.setRegion(region, animated: true)
             mapy.addAnnotation(annotation)
             tapCount = 0
         }

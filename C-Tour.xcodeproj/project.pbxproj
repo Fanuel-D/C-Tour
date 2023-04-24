@@ -25,7 +25,7 @@
 		A071AF0529F322C000570665 /* HopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A071AF0429F322C000570665 /* HopeViewController.swift */; };
 		A071AF0929F361A400570665 /* CorrectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A071AF0829F361A400570665 /* CorrectViewController.swift */; };
 		A071AF0B29F3A47500570665 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A071AF0A29F3A47500570665 /* Location.swift */; };
-		D53BC19B29F2A8DB00796BE1 /* CampusViewControlllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53BC19A29F2A8DB00796BE1 /* CampusViewControlllerViewController.swift */; };
+		D53BC19B29F2A8DB00796BE1 /* CampusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53BC19A29F2A8DB00796BE1 /* CampusViewController.swift */; };
 		D53BC19D29F2A91400796BE1 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53BC19C29F2A91400796BE1 /* SearchCell.swift */; };
 		D53BC19F29F2AB8C00796BE1 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53BC19E29F2AB8C00796BE1 /* PostViewController.swift */; };
 		D5A2490C29EA1C89005FF668 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A2490B29EA1C89005FF668 /* LoginViewController.swift */; };
@@ -53,7 +53,7 @@
 		A071AF0429F322C000570665 /* HopeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HopeViewController.swift; sourceTree = "<group>"; };
 		A071AF0829F361A400570665 /* CorrectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CorrectViewController.swift; sourceTree = "<group>"; };
 		A071AF0A29F3A47500570665 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
-		D53BC19A29F2A8DB00796BE1 /* CampusViewControlllerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusViewControlllerViewController.swift; sourceTree = "<group>"; };
+		D53BC19A29F2A8DB00796BE1 /* CampusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CampusViewController.swift; sourceTree = "<group>"; };
 		D53BC19C29F2A91400796BE1 /* SearchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchCell.swift; sourceTree = "<group>"; };
 		D53BC19E29F2AB8C00796BE1 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		D5A2490B29EA1C89005FF668 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -91,7 +91,7 @@
 				D5A2490B29EA1C89005FF668 /* LoginViewController.swift */,
 				38A5D42229EB7ACF0056BF6B /* SignUpViewController.swift */,
 				38A5D42029EB7A740056BF6B /* ViewController Extensions.swift */,
-				D53BC19A29F2A8DB00796BE1 /* CampusViewControlllerViewController.swift */,
+				D53BC19A29F2A8DB00796BE1 /* CampusViewController.swift */,
 				D53BC19E29F2AB8C00796BE1 /* PostViewController.swift */,
 				A071AF0429F322C000570665 /* HopeViewController.swift */,
 				A071AF0829F361A400570665 /* CorrectViewController.swift */,
@@ -225,7 +225,7 @@
 				7A4278F129F6059500CF5C64 /* HopeDetailViewController.swift in Sources */,
 				D53BC19F29F2AB8C00796BE1 /* PostViewController.swift in Sources */,
 				A071AF0929F361A400570665 /* CorrectViewController.swift in Sources */,
-				D53BC19B29F2A8DB00796BE1 /* CampusViewControlllerViewController.swift in Sources */,
+				D53BC19B29F2A8DB00796BE1 /* CampusViewController.swift in Sources */,
 				38A5D41E29EB6FC80056BF6B /* College.swift in Sources */,
 				A04AF61729E9BBB90055A006 /* SceneDelegate.swift in Sources */,
 				D5A2490C29EA1C89005FF668 /* LoginViewController.swift in Sources */,

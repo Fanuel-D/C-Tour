@@ -15,6 +15,20 @@ class HopeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+
+    @IBAction func hopeDetailSegue(_ sender: UITapGestureRecognizer) {
+        
+        if let tappedView = sender.view {
+            performSegue(withIdentifier: "hopeDetailSegue", sender: tappedView)
+            
+            
+            
+        }
+    }
+    
+    
+    
+    
     @IBOutlet weak var imageView: UIImageView!
     
     @IBAction func didTapLabel(_ sender: UITapGestureRecognizer) {

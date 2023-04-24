@@ -13,6 +13,7 @@
 		38A5D41E29EB6FC80056BF6B /* College.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A5D41D29EB6FC80056BF6B /* College.swift */; };
 		38A5D42129EB7A740056BF6B /* ViewController Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A5D42029EB7A740056BF6B /* ViewController Extensions.swift */; };
 		38A5D42329EB7ACF0056BF6B /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A5D42229EB7ACF0056BF6B /* SignUpViewController.swift */; };
+		7A4278F129F6059500CF5C64 /* HopeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A4278F029F6059500CF5C64 /* HopeDetailViewController.swift */; };
 		A04AF61529E9BBB90055A006 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04AF61429E9BBB90055A006 /* AppDelegate.swift */; };
 		A04AF61729E9BBB90055A006 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04AF61629E9BBB90055A006 /* SceneDelegate.swift */; };
 		A04AF61C29E9BBB90055A006 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A04AF61A29E9BBB90055A006 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 		38A5D41D29EB6FC80056BF6B /* College.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = College.swift; sourceTree = "<group>"; };
 		38A5D42029EB7A740056BF6B /* ViewController Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ViewController Extensions.swift"; sourceTree = "<group>"; };
 		38A5D42229EB7ACF0056BF6B /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		7A4278F029F6059500CF5C64 /* HopeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HopeDetailViewController.swift; path = "C-Tour/View Controllers/HopeDetailViewController.swift"; sourceTree = "<group>"; };
 		A04AF61129E9BBB90055A006 /* C-Tour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "C-Tour.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A04AF61429E9BBB90055A006 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A04AF61629E9BBB90055A006 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 		A04AF60829E9BBB90055A006 = {
 			isa = PBXGroup;
 			children = (
+				7A4278F029F6059500CF5C64 /* HopeDetailViewController.swift */,
 				A04AF61329E9BBB90055A006 /* C-Tour */,
 				A04AF61229E9BBB90055A006 /* Products */,
 			);
@@ -211,6 +214,7 @@
 				38A5D42129EB7A740056BF6B /* ViewController Extensions.swift in Sources */,
 				A071AF0B29F3A47500570665 /* Location.swift in Sources */,
 				38A5D42329EB7ACF0056BF6B /* SignUpViewController.swift in Sources */,
+				7A4278F129F6059500CF5C64 /* HopeDetailViewController.swift in Sources */,
 				D53BC19F29F2AB8C00796BE1 /* PostViewController.swift in Sources */,
 				A071AF0929F361A400570665 /* CorrectViewController.swift in Sources */,
 				D53BC19B29F2A8DB00796BE1 /* CampusViewControlllerViewController.swift in Sources */,

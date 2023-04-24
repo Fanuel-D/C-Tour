@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BGq-vs-QPp">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="as2-Hf-Amd">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
@@ -568,7 +568,7 @@
         <scene sceneID="Lq7-Cy-aJZ">
             <objects>
                 <viewController storyboardIdentifier="HopeViewController" id="BGq-vs-QPp" customClass="HopeViewController" customModule="C_Tour" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="BsW-oc-JPK">
+                    <view key="view" contentMode="scaleToFill" id="BsW-oc-JPK">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -594,27 +594,43 @@
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d30-YR-mVV">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d30-YR-mVV">
                                 <rect key="frame" x="0.0" y="221" width="393" height="511"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MjI-Xf-4N1">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MjI-Xf-4N1">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="3000"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Amphitheater" translatesAutoresizingMaskIntoConstraints="NO" id="a3J-qm-Z14">
+                                            <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Amphitheater" translatesAutoresizingMaskIntoConstraints="NO" id="a3J-qm-Z14">
                                                 <rect key="frame" x="8" y="68" width="168" height="127"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="H9s-FN-QCX" appends="YES" id="BVP-6b-XOB"/>
+                                                </connections>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Arboretum" translatesAutoresizingMaskIntoConstraints="NO" id="SGZ-hs-lfb">
+                                            <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Arboretum" translatesAutoresizingMaskIntoConstraints="NO" id="SGZ-hs-lfb">
                                                 <rect key="frame" x="217" y="68" width="168" height="126"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="n7f-iQ-9x3" appends="YES" id="FmD-hu-foM"/>
+                                                </connections>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Crum Woods" translatesAutoresizingMaskIntoConstraints="NO" id="6Ff-ey-dUw">
+                                            <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Crum Woods" translatesAutoresizingMaskIntoConstraints="NO" id="6Ff-ey-dUw">
                                                 <rect key="frame" x="8" y="238" width="168" height="127"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="7wD-y4-rTq" appends="YES" id="omi-6m-mEB"/>
+                                                </connections>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Whisper" highlightedImage="Crum Woods" translatesAutoresizingMaskIntoConstraints="NO" id="udG-qV-OIB">
+                                            <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Whisper" highlightedImage="Crum Woods" translatesAutoresizingMaskIntoConstraints="NO" id="udG-qV-OIB">
                                                 <rect key="frame" x="217" y="238" width="168" height="127"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="XP1-LP-SiM" appends="YES" id="bOU-fY-YB6"/>
+                                                </connections>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Top Spots on Campus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieV-q6-6sF">
                                                 <rect key="frame" x="8" y="25" width="221" height="26"/>
@@ -670,8 +686,8 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="393" height="549"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="dnc-8I-21i">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="393" height="549"/>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="dnc-8I-21i">
+                                                                    <rect key="frame" x="0.0" y="-33" width="393" height="549"/>
                                                                     <subviews>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="v3V-1v-o6x">
                                                                             <rect key="frame" x="0.0" y="0.0" width="146.66666666666666" height="50"/>
@@ -784,6 +800,7 @@
                         <outlet property="imageView" destination="P1B-YH-cOR" id="eCm-uX-OsM"/>
                         <segue destination="JRB-3v-eWM" kind="show" identifier="theSegue" id="rWz-AA-V7V"/>
                         <segue destination="fdz-By-VDt" kind="show" id="ghc-gp-TqO"/>
+                        <segue destination="QbK-RX-2fn" kind="show" identifier="hopeDetailSegue" id="BD5-Ld-a7m"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dbw-4s-kJ4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -792,8 +809,28 @@
                         <action selector="didTapLabel:" destination="BGq-vs-QPp" id="5PN-Wt-M1l"/>
                     </connections>
                 </tapGestureRecognizer>
+                <tapGestureRecognizer id="n7f-iQ-9x3" userLabel="Tap Gesture Recognizer 2">
+                    <connections>
+                        <action selector="hopeDetailSegue:" destination="BGq-vs-QPp" id="LY9-bn-WVa"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="7wD-y4-rTq" userLabel="Tap Gesture Recognizer 3">
+                    <connections>
+                        <action selector="hopeDetailSegue:" destination="BGq-vs-QPp" id="Eti-Hl-JiM"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="XP1-LP-SiM" userLabel="Tap Gesture Recognizer 4">
+                    <connections>
+                        <action selector="hopeDetailSegue:" destination="BGq-vs-QPp" id="2ay-lm-wtO"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="H9s-FN-QCX">
+                    <connections>
+                        <action selector="hopeDetailSegue:" destination="BGq-vs-QPp" id="Fab-Oo-mRY"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="5968.7022900763359" y="724.64788732394368"/>
+            <point key="canvasLocation" x="6895.419847328244" y="724.64788732394368"/>
         </scene>
         <!--Correct View Controller-->
         <scene sceneID="HLO-ON-nda">
@@ -869,7 +906,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Rz-4S-3Va" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6977.8625954198469" y="724.64788732394368"/>
+            <point key="canvasLocation" x="7904.5801526717551" y="724.64788732394368"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Fyj-S2-Xl0">
@@ -919,7 +956,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="BGq-vs-QPp" kind="relationship" relationship="rootViewController" id="1RO-xI-x13"/>
+                        <segue destination="as2-Hf-Amd" kind="relationship" relationship="rootViewController" id="1RO-xI-x13"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WTZ-pC-rne" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -996,6 +1033,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b3h-7c-k6U" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="5967" y="1444"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="IC7-83-3kU">
+            <objects>
+                <viewController id="QbK-RX-2fn" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="anZ-1Y-amz">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="C7K-wr-fza"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="rDL-sC-jgZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bEa-KO-EK0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6871" y="1467"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="xhG-CJ-QUs">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="as2-Hf-Amd" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="hcE-3c-it7"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="igo-xv-ILF">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BGq-vs-QPp" kind="relationship" relationship="rootViewController" id="FCe-CG-nVE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mEG-6y-46h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5968.7022900763359" y="724.64788732394368"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

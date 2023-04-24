@@ -568,7 +568,7 @@
         <scene sceneID="Lq7-Cy-aJZ">
             <objects>
                 <viewController storyboardIdentifier="HopeViewController" id="BGq-vs-QPp" customClass="HopeViewController" customModule="C_Tour" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="BsW-oc-JPK">
+                    <view key="view" contentMode="scaleToFill" ambiguous="YES" id="BsW-oc-JPK">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -594,10 +594,10 @@
                                 <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d30-YR-mVV">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d30-YR-mVV">
                                 <rect key="frame" x="0.0" y="221" width="393" height="511"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MjI-Xf-4N1">
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MjI-Xf-4N1">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="3000"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Amphitheater" translatesAutoresizingMaskIntoConstraints="NO" id="a3J-qm-Z14">

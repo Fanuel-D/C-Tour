@@ -604,21 +604,33 @@
                                                 <rect key="frame" x="8" y="68" width="168" height="127"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="S2U-Bu-Pv3" appends="YES" id="pJ8-Gf-Onm"/>
+                                                </connections>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Arboretum" translatesAutoresizingMaskIntoConstraints="NO" id="SGZ-hs-lfb">
+                                            <imageView clipsSubviews="YES" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Arboretum" translatesAutoresizingMaskIntoConstraints="NO" id="SGZ-hs-lfb">
                                                 <rect key="frame" x="217" y="68" width="168" height="126"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="erM-HI-qbI" appends="YES" id="cYw-Ki-q7E"/>
+                                                </connections>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Crum Woods" translatesAutoresizingMaskIntoConstraints="NO" id="6Ff-ey-dUw">
+                                            <imageView clipsSubviews="YES" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Crum Woods" translatesAutoresizingMaskIntoConstraints="NO" id="6Ff-ey-dUw">
                                                 <rect key="frame" x="8" y="238" width="168" height="127"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="sAf-m3-Whx" appends="YES" id="H2r-X3-Crj"/>
+                                                </connections>
                                             </imageView>
-                                            <imageView clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Whisper" highlightedImage="Crum Woods" translatesAutoresizingMaskIntoConstraints="NO" id="udG-qV-OIB">
+                                            <imageView clipsSubviews="YES" tag="3" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Whisper" highlightedImage="Crum Woods" translatesAutoresizingMaskIntoConstraints="NO" id="udG-qV-OIB">
                                                 <rect key="frame" x="217" y="238" width="168" height="127"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                 <gestureRecognizers/>
+                                                <connections>
+                                                    <outletCollection property="gestureRecognizers" destination="bhp-qM-eEN" appends="YES" id="UJz-O2-Gf2"/>
+                                                </connections>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Top Spots on Campus" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ieV-q6-6sF">
                                                 <rect key="frame" x="8" y="25" width="221" height="26"/>
@@ -794,12 +806,33 @@
                         <outlet property="imageView" destination="P1B-YH-cOR" id="eCm-uX-OsM"/>
                         <segue destination="JRB-3v-eWM" kind="show" identifier="theSegue" id="rWz-AA-V7V"/>
                         <segue destination="YdC-f2-u9H" kind="show" identifier="trueSegue" id="40v-px-Y5h"/>
+                        <segue destination="snE-ls-pkJ" kind="show" identifier="hopeDetailSegue" id="7vx-Mj-MqV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dbw-4s-kJ4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tapGestureRecognizer id="qyd-74-0NA">
                     <connections>
                         <action selector="didTapLabel:" destination="BGq-vs-QPp" id="5PN-Wt-M1l"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="S2U-Bu-Pv3">
+                    <connections>
+                        <action selector="didTapImage:" destination="BGq-vs-QPp" id="iOe-lK-gcN"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="erM-HI-qbI">
+                    <connections>
+                        <action selector="didTapImage:" destination="BGq-vs-QPp" id="AcR-bl-SfD"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="sAf-m3-Whx">
+                    <connections>
+                        <action selector="didTapImage:" destination="BGq-vs-QPp" id="Kfn-fe-Ucw"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="bhp-qM-eEN">
+                    <connections>
+                        <action selector="didTapImage:" destination="BGq-vs-QPp" id="x07-32-DVI"/>
                     </connections>
                 </tapGestureRecognizer>
             </objects>
@@ -1026,6 +1059,69 @@
             </objects>
             <point key="canvasLocation" x="6897" y="1444"/>
         </scene>
+        <!--Hope Detail View Controller-->
+        <scene sceneID="gak-eu-p01">
+            <objects>
+                <viewController id="snE-ls-pkJ" customClass="HopeDetailViewController" customModule="C_Tour" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Skh-K9-osA">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gJe-J6-yeu">
+                                <rect key="frame" x="54" y="121" width="279" height="253"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BB9-EA-i91">
+                                <rect key="frame" x="129" y="366" width="198" height="56"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0vd-WI-UOq">
+                                <rect key="frame" x="54" y="444" width="107" height="28"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" systemColor="systemBlueColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Founded :" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DO6-W4-38e">
+                                <rect key="frame" x="54" y="480" width="67" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
+                                <color key="textColor" systemColor="systemGroupedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ua9-aO-VlU">
+                                <rect key="frame" x="129" y="479" width="45" height="17"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <color key="textColor" systemColor="systemGray6Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Tz-b9-7Ik">
+                                <rect key="frame" x="54" y="505" width="293" height="270"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0zN-n4-Oh2"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="0SW-ft-XUP"/>
+                    <connections>
+                        <outlet property="spotImage" destination="gJe-J6-yeu" id="ESo-J7-GYo"/>
+                        <outlet property="spotdesc" destination="7Tz-b9-7Ik" id="cLG-NV-6NY"/>
+                        <outlet property="spotname" destination="BB9-EA-i91" id="LFf-4o-Ig4"/>
+                        <outlet property="year" destination="ua9-aO-VlU" id="YGc-ov-COs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4xr-Uq-leq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7591.6030534351139" y="1452.8169014084508"/>
+        </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="SOw-Xb-jcV"/>
@@ -1048,6 +1144,15 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGroupedBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

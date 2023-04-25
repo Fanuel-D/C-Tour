@@ -41,7 +41,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Dgj-Yt-dla">
-                                <rect key="frame" x="41" y="233.99999999999997" width="311" height="384.33333333333326"/>
+                                <rect key="frame" x="41" y="234" width="311" height="384.33333333333326"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="v7d-Bv-71P">
                                         <rect key="frame" x="0.0" y="0.0" width="311" height="316.33333333333331"/>
@@ -129,7 +129,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="bottom" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="FC5-tb-OcE">
-                                <rect key="frame" x="30" y="89" width="333" height="486"/>
+                                <rect key="frame" x="30" y="54" width="333" height="486"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LWN-T3-lhd">
                                         <rect key="frame" x="0.0" y="0.0" width="333" height="48"/>
@@ -208,7 +208,7 @@
                         <viewLayoutGuide key="safeArea" id="zKU-4j-5Zq"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="FC5-tb-OcE" firstAttribute="top" secondItem="zKU-4j-5Zq" secondAttribute="top" constant="89" id="AiA-mr-Xo7"/>
+                            <constraint firstItem="FC5-tb-OcE" firstAttribute="top" secondItem="zKU-4j-5Zq" secondAttribute="top" constant="54" id="AiA-mr-Xo7"/>
                             <constraint firstItem="FC5-tb-OcE" firstAttribute="leading" secondItem="zKU-4j-5Zq" secondAttribute="leading" constant="30" id="Gua-Tq-7ZD"/>
                             <constraint firstItem="zKU-4j-5Zq" firstAttribute="trailing" secondItem="FC5-tb-OcE" secondAttribute="trailing" constant="30" id="x56-H3-VUc"/>
                         </constraints>

@@ -13,12 +13,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         static let tabNavigationController = "TabNavigationController"
         static let storyboardIdentifier = "Main"
         
-        static let postViewController = "PostViewController"
-        static let campusViewController = "CampusViewController"
-        static let collegeSpecController = "CollegeSpecController"
-        static let hopeViewController = "HopeViewController"
-        static let hopeNavigationController = "HopeNavigationController"
-        
+//        static let postViewController = "PostViewController"
+//        static let campusViewController = "CampusViewController"
+//        static let collegeSpecController = "CollegeSpecController"
+//        static let hopeViewController = "HopeViewController"
+//        static let hopeNavigationController = "HopeNavigationController"
+//
         
         
     }
@@ -47,7 +47,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     private func login() {
         let storyboard = UIStoryboard(name: Constants.storyboardIdentifier, bundle: nil)
-        self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: Constants.hopeNavigationController)
+        self.window?.rootViewController = storyboard.instantiateViewController(withIdentifier: Constants.tabNavigationController)
     }
     
     private func logOut() {

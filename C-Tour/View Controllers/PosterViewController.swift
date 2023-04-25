@@ -41,6 +41,13 @@ class PosterViewController: UIViewController{
         present(picker, animated: true)
     }
     
+    
+    
+    
+    
+    
+    
+    
     @IBAction func sharePhotoTapped(_ sender: UIBarButtonItem) {
         
         guard let image = pickedImage,

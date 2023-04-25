@@ -45,9 +45,6 @@ class PosterViewController: UIViewController{
     
     
     
-    
-    
-    
     @IBAction func sharePhotoTapped(_ sender: UIBarButtonItem) {
         
         guard let image = pickedImage,
@@ -87,9 +84,8 @@ class PosterViewController: UIViewController{
         }
     }
     
+
     @IBAction func onTakePhotoTapped(_ sender: UIBarButtonItem) {
-        // Make sure the user's camera is available
-        // NOTE: Camera only available on physical iOS device, not available on simulator.
         guard UIImagePickerController.isSourceTypeAvailable(.camera) else {
             print("❌📷 Camera not available")
             return
@@ -109,6 +105,7 @@ class PosterViewController: UIViewController{
         // Present the image picker (camera)
         present(imagePicker, animated: true)
     }
+    
     
     /*
     // MARK: - Navigation

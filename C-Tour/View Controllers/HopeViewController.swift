@@ -9,7 +9,8 @@ import UIKit
 
 class HopeViewController: UIViewController {
     
-
+    @IBOutlet weak var table: UITableView!
+    
     
     let amphitheater = Spot(image: UIImage(named: "amp2") ?? UIImage(), spotName: "The Amphitheater", year: 1890, spotDescription: "When you see it for the first time, it will take your breath away. One of Swarthmore’s most treasured spaces, Scott Outdoor Amphitheater is the site of new students’ first formal gathering as a class, First Collection, and their Last Collection.")
     
@@ -23,20 +24,28 @@ class HopeViewController: UIViewController {
     
     
     var spots :[Spot] = []
+    private var posts = [Post]() {
+        didSet {
+            // Reload table view data any time the posts variable gets updated.
+            table.reloadData()
+        }
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         spots = [amphitheater, arboretum, crum, whisper]
 
-
+        table.delegate = self
+        table.dataSource = self
+        table.allowsSelection = false
         // Do any additional setup after loading the view.
     }
     
 
     @IBAction func add(_ sender: UIBarButtonItem) {
         
-        performSegue(withIdentifier: "testSegue", sender: self)
+        performSegue(withIdentifier: "feedSegue", sender: self)
     }
     
     
@@ -66,6 +75,11 @@ class HopeViewController: UIViewController {
             }
         }
     }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        queryPosts()
+    }
     
     @IBOutlet weak var imageView: UIImageView!
     
@@ -74,15 +88,39 @@ class HopeViewController: UIViewController {
             performSegue(withIdentifier: "theSegue", sender: tappedView)
         }
     }
-   
-    /*
-    // MARK: - Navigation
+    private func queryPosts() {
+        // TODO: Pt 1 - Query Posts
+        let query = Post.query()
+            .include("user")
+            .order([.descending("createdAt")])
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        // Fetch objects (posts) defined in query (async)
+        query.find { [weak self] result in
+            switch result {
+            case .success(let posts):
+                // Update local posts property with fetched posts
+                self?.posts = posts
+            case .failure(let error):
+                self?.showAlert(description: error.localizedDescription)
+            }
+        }
+
+
     }
-    */
-
+   
 }
+extension HopeViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return posts.count
+    }
+
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "PostCellCopy", for: indexPath) as? PostCell else {
+            return UITableViewCell()
+        }
+        cell.configure(with: posts[indexPath.row])
+        return cell
+    }
+}
+
+extension HopeViewController: UITableViewDelegate { }

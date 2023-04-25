@@ -36,7 +36,7 @@ class HopeViewController: UIViewController {
 
     @IBAction func add(_ sender: UIBarButtonItem) {
         
-        performSegue(withIdentifier: "trueSegue", sender: self)
+        performSegue(withIdentifier: "testSegue", sender: self)
     }
     
     

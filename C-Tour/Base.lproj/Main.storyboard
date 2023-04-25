@@ -493,42 +493,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="ApX-Jc-mAf">
-                                <rect key="frame" x="0.0" y="127.33333333333331" width="393" height="534.66666666666674"/>
-                                <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Deb-NU-BCl">
-                                        <rect key="frame" x="0.0" y="0.0" width="393" height="34.333333333333336"/>
-                                        <subviews>
-                                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biK-va-xun">
-                                                <rect key="frame" x="0.0" y="0.0" width="393" height="34.333333333333336"/>
-                                                <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="filled" title="Choose a photo"/>
-                                                <connections>
-                                                    <action selector="onPickImageTapped:" destination="WVE-1Y-xVX" eventType="touchUpInside" id="6GI-JO-mun"/>
-                                                </connections>
-                                            </button>
-                                        </subviews>
-                                    </stackView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vka-hU-ilL">
-                                        <rect key="frame" x="0.0" y="47.333333333333314" width="393" height="393"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" secondItem="Vka-hU-ilL" secondAttribute="height" multiplier="1:1" id="Jqy-HH-TYe"/>
-                                        </constraints>
-                                    </imageView>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write a caption" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="v0y-ga-jY9">
-                                        <rect key="frame" x="0.0" y="453.33333333333331" width="393" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TkK-2f-30T">
-                                        <rect key="frame" x="0.0" y="500.33333333333331" width="393" height="34.333333333333314"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Post"/>
-                                        <connections>
-                                            <action selector="shareTapped:" destination="WVE-1Y-xVX" eventType="touchUpInside" id="RYA-gP-Veg"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Deb-NU-BCl">
+                                <rect key="frame" x="0.0" y="127.33333333333333" width="129.33333333333334" height="34.333333333333329"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="6FW-R0-gXm">
                                 <rect key="frame" x="16" y="574.66666666666663" width="125.66666666666669" height="34"/>
@@ -538,17 +505,62 @@
                                 <rect key="frame" x="16" y="634.66666666666652" width="58" height="34.333333333333371"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="QSc-wg-0di">
+                                <rect key="frame" x="160" y="103" width="129.33333333333337" height="34.333333333333343"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="sLL-Ic-ulO">
+                                <rect key="frame" x="0.0" y="109" width="393" height="570"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gce-0D-015">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="34.333333333333336"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Open Camera"/>
+                                        <connections>
+                                            <action selector="takePhotoTapped:" destination="WVE-1Y-xVX" eventType="touchUpInside" id="df8-w0-mR0"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="biK-va-xun">
+                                        <rect key="frame" x="0.0" y="44.333333333333343" width="393" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Choose a photo"/>
+                                        <connections>
+                                            <action selector="onPickImageTapped:" destination="WVE-1Y-xVX" eventType="touchUpInside" id="6GI-JO-mun"/>
+                                        </connections>
+                                    </button>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Vka-hU-ilL">
+                                        <rect key="frame" x="0.0" y="88.666666666666629" width="393" height="393"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="Vka-hU-ilL" secondAttribute="height" multiplier="1:1" id="Jqy-HH-TYe"/>
+                                        </constraints>
+                                    </imageView>
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write a caption" textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="v0y-ga-jY9">
+                                        <rect key="frame" x="0.0" y="491.66666666666663" width="393" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TkK-2f-30T">
+                                        <rect key="frame" x="0.0" y="535.66666666666663" width="393" height="34.333333333333371"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Post"/>
+                                        <connections>
+                                            <action selector="shareTapped:" destination="WVE-1Y-xVX" eventType="touchUpInside" id="RYA-gP-Veg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Fy-pS-RD0"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="ApX-Jc-mAf" secondAttribute="trailing" id="1lg-hG-a3T"/>
-                            <constraint firstItem="ApX-Jc-mAf" firstAttribute="leading" secondItem="6Fy-pS-RD0" secondAttribute="leading" id="GCw-H9-YBk"/>
-                            <constraint firstItem="6Fy-pS-RD0" firstAttribute="bottom" secondItem="ApX-Jc-mAf" secondAttribute="bottom" constant="107" id="xkm-kc-U62"/>
+                            <constraint firstItem="6Fy-pS-RD0" firstAttribute="bottom" secondItem="sLL-Ic-ulO" secondAttribute="bottom" constant="90" id="3wN-Xw-JG9"/>
+                            <constraint firstItem="sLL-Ic-ulO" firstAttribute="leading" secondItem="YfD-ct-aLi" secondAttribute="leading" id="Ln0-TM-Qiy"/>
+                            <constraint firstItem="6Fy-pS-RD0" firstAttribute="trailing" secondItem="sLL-Ic-ulO" secondAttribute="trailing" id="yib-9K-MfH"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wVs-Zm-6us"/>
                     <connections>
+                        <outlet property="camera" destination="gce-0D-015" id="D2V-mn-l8m"/>
                         <outlet property="choosePhotoButton" destination="biK-va-xun" id="SvR-Ik-s4T"/>
                         <outlet property="imageView" destination="Vka-hU-ilL" id="DIx-1V-VZQ"/>
                         <outlet property="postButton" destination="TkK-2f-30T" id="gbD-Uf-Qu2"/>
@@ -800,8 +812,8 @@
                     <connections>
                         <outlet property="imageView" destination="P1B-YH-cOR" id="eCm-uX-OsM"/>
                         <segue destination="JRB-3v-eWM" kind="show" identifier="theSegue" id="rWz-AA-V7V"/>
-                        <segue destination="YdC-f2-u9H" kind="show" identifier="trueSegue" id="40v-px-Y5h"/>
                         <segue destination="snE-ls-pkJ" kind="show" identifier="hopeDetailSegue" id="7vx-Mj-MqV"/>
+                        <segue destination="WVE-1Y-xVX" kind="show" identifier="testSegue" id="BQF-F5-usF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dbw-4s-kJ4" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -986,7 +998,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="zW4-Vx-idz">
-                                <rect key="frame" x="0.0" y="103" width="393" height="586"/>
+                                <rect key="frame" x="0.0" y="152" width="393" height="586"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="RYR-6h-Phu">
                                         <rect key="frame" x="0.0" y="0.0" width="393" height="34.333333333333336"/>
@@ -1140,7 +1152,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="8aM-5q-sEk"/>
-        <segue reference="SOw-Xb-jcV"/>
+        <segue reference="BQF-F5-usF"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Amphitheater" width="1600" height="1200"/>

@@ -20,20 +20,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Initialize ParseSwift
         ParseSwift.initialize(applicationId: "itt070OMbtBuceGAECm0dIhtGG5tDvK6rVk64tMS", clientKey: "fKqZ7DyXXASSYPxaPpzDDVLJirStIJ9mYpVLbmZH", serverURL: URL(string: "https://parseapi.back4app.com")!)
 
-        // Creates a ParseSwift object to test connection
-        // Test was successful
-//        var score = GameScore()
-//        score.playerName = "Kingsley"
-//        score.points = 13
-//
-//       score.save { result in
-//            switch result {
-//           case .success(let savedScore):
-//               print("✅ Parse Object SAVED!: Player: \(String(describing: savedScore.playerName)), Score: \(String(describing: savedScore.points))")
-//           case .failure(let error):
-//              assertionFailure("Error saving: \(error)")
-//          }
-//       }
         return true
     }
 

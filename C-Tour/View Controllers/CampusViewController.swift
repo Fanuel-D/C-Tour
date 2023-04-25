@@ -22,10 +22,22 @@ class CampusViewController: UIViewController, UITableViewDataSource, UITableView
     
 
     let colleges = [
-        College(name: "Swarthmore", location: "500 College Ave, Swarthmore, PA 19081", logopic: UIImage(named: "Logo")!) ,
-        College(name: "Haverford", location: "370 Lancaster Ave, Haverford, PA 19041", logopic: UIImage(named: "haverford")!),
-        College(name: "UPenn", location: "UPenn University of, Philadelphia, PA 19104", logopic: UIImage(named: "UPenn")!),
-        College(name: "Bryn Mawr", location: "101 N Merion Ave, Bryn Mawr, PA 19010", logopic: UIImage(named: "Bryn")!)
+        College(name: "Swarthmore College", location: "500 College Ave, Swarthmore, PA 19081", logopic: UIImage(named: "Logo")!) ,
+        College(name: "Haverford College", location: "370 Lancaster Ave, Haverford, PA 19041", logopic: UIImage(named: "haverford")!),
+        College(name: "University of Pennsylvania", location: "UPenn University of, Philadelphia, PA 19104", logopic: UIImage(named: "UPenn")!),
+        College(name: "Bryn Mawr College", location: "101 N Merion Ave, Bryn Mawr, PA 19010", logopic: UIImage(named: "Bryn")!),
+        College(name: "Stanford University", location: "450 Serra Mall, Stanford, CA 94305", logopic: UIImage(named: "stanford")!),
+        College(name: "Harvard University", location: "Cambridge, MA", logopic: UIImage(named: "harvard")!),
+        College(name: "Yale University", location: "New Haven, CT 06520", logopic: UIImage(named: "yale")!),
+        College(name: "Massachussetts Institute of Technology", location: "77 Massachussetts Ave, Cambridge, MA 02139", logopic: UIImage(named: "mit")!),
+        College(name: "Columbia University", location: "NewYork, NY 10027", logopic: UIImage(named: "columbia")!),
+        College(name: "Amherst College", location: "Amherst, MA", logopic: UIImage(named: "amherst")!),
+        College(name: "Princeton University", location: "Princeton, NJ", logopic: UIImage(named: "princeton")!),
+        College(name: "Thomas Jefferson University", location: "4201 Henry Ave, Philadelphia, PA 19144", logopic: UIImage(named: "jefferson")!),
+        College(name: "Vanderbilt University", location: "2201 West End Ave, Nashville, TN 37235", logopic: UIImage(named: "vanderbilt")!),
+        College(name: "Williams College", location: "800 Main St, Williamstown, MA", logopic: UIImage(named: "williams")!),
+        College(name: "John Hopkins University", location: "Baltimore, MD", logopic: UIImage(named: "hopkins")!),
+        College(name: "Carnegie Mellon University", location: "5000 Forbes Ave, Pittsburgh, PA", logopic: UIImage(named: "cmu")!)
     ]
     
     var filteredData = [College]()

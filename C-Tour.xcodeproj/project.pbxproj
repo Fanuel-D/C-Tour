@@ -25,6 +25,8 @@
 		A071AF0529F322C000570665 /* HopeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A071AF0429F322C000570665 /* HopeViewController.swift */; };
 		A071AF0929F361A400570665 /* CorrectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A071AF0829F361A400570665 /* CorrectViewController.swift */; };
 		A071AF0B29F3A47500570665 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = A071AF0A29F3A47500570665 /* Location.swift */; };
+		A08364C829F8078D000B0CA3 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = A08364C729F8078D000B0CA3 /* Alamofire */; };
+		A08364CB29F807B0000B0CA3 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = A08364CA29F807B0000B0CA3 /* AlamofireImage */; };
 		D53BC19B29F2A8DB00796BE1 /* CampusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53BC19A29F2A8DB00796BE1 /* CampusViewController.swift */; };
 		D53BC19D29F2A91400796BE1 /* SearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53BC19C29F2A91400796BE1 /* SearchCell.swift */; };
 		D53BC19F29F2AB8C00796BE1 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D53BC19E29F2AB8C00796BE1 /* PostViewController.swift */; };
@@ -67,6 +69,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				38A5D41829EB6B3D0056BF6B /* ParseSwift in Frameworks */,
+				A08364C829F8078D000B0CA3 /* Alamofire in Frameworks */,
+				A08364CB29F807B0000B0CA3 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -154,6 +158,8 @@
 			name = "C-Tour";
 			packageProductDependencies = (
 				38A5D41729EB6B3D0056BF6B /* ParseSwift */,
+				A08364C729F8078D000B0CA3 /* Alamofire */,
+				A08364CA29F807B0000B0CA3 /* AlamofireImage */,
 			);
 			productName = "C-Tour";
 			productReference = A04AF61129E9BBB90055A006 /* C-Tour.app */;
@@ -185,6 +191,8 @@
 			mainGroup = A04AF60829E9BBB90055A006;
 			packageReferences = (
 				38A5D41629EB6B3D0056BF6B /* XCRemoteSwiftPackageReference "Parse-Swift" */,
+				A08364C629F8078D000B0CA3 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				A08364C929F807B0000B0CA3 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
 			);
 			productRefGroup = A04AF61229E9BBB90055A006 /* Products */;
 			projectDirPath = "";
@@ -464,6 +472,22 @@
 				minimumVersion = 4.0.0;
 			};
 		};
+		A08364C629F8078D000B0CA3 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		A08364C929F807B0000B0CA3 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -471,6 +495,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 38A5D41629EB6B3D0056BF6B /* XCRemoteSwiftPackageReference "Parse-Swift" */;
 			productName = ParseSwift;
+		};
+		A08364C729F8078D000B0CA3 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A08364C629F8078D000B0CA3 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		A08364CA29F807B0000B0CA3 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A08364C929F807B0000B0CA3 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
 		};
 /* End XCSwiftPackageProductDependency section */
 

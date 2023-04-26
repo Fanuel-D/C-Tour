@@ -101,8 +101,6 @@ This app does what any tour guide can do but also more. It enables users to expl
 
 ### Video Walkthrough
 
-![Final Project](https://user-images.githubusercontent.com/113659365/234433742-8f7be359-4f45-4b20-a223-6b4803a9e6be.gif)
-
 
 ## Schema 
 [This section will be completed in Unit 9]

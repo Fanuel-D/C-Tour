@@ -93,7 +93,8 @@ This app does what any tour guide can do but also more. It enables users to expl
 ## Wireframes
 
 <img src="YOUR_WIREFRAME_IMAGE_URL" width=600> ![](https://i.imgur.com/ZXRO1MW.jpg)
-<img style="max-width:300px;" src= "https://i.imgur.com/BSqBnDr.gif">
+![Project Demo GIF](https://i.imgur.com/BSqBnDr.gif)
+
 
 ### [BONUS] Digital Wireframes & Mockups
 

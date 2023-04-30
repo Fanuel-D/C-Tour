@@ -11,15 +11,15 @@ import AlamofireImage
 
 class PostCellCopy: UITableViewCell {
 
-    @IBOutlet weak var dayLabel: UILabel!
-    @IBOutlet weak var captionLabel: UILabel!
-    @IBOutlet weak var name: UILabel!
-    @IBOutlet weak var postImage: UIImageView!
+    @IBOutlet weak var dayer: UILabel!
+    @IBOutlet weak var captioner: UILabel!
+    @IBOutlet weak var namer: UILabel!
+    @IBOutlet weak var imagely: UIImageView!
     private var imageDataRequest: DataRequest?
     func configure(with post: Post) {
         // TODO: Pt 1 - Configure Post Cell
         if let user = post.user {
-            name.text = user.username
+            namer.text = user.username
         }
 
         // Image
@@ -31,7 +31,7 @@ class PostCellCopy: UITableViewCell {
                 switch response.result {
                 case .success(let image):
                     // Set image view image with fetched image
-                    self?.postImage.image = image
+                    self?.imagely.image = image
                 case .failure(let error):
                     print("❌ Error fetching image: \(error.localizedDescription)")
                     break
@@ -40,7 +40,7 @@ class PostCellCopy: UITableViewCell {
         }
 
         // Caption
-        captionLabel.text = post.caption
+        captioner.text = post.caption
     
 
         // Date
@@ -48,7 +48,7 @@ class PostCellCopy: UITableViewCell {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "EEEE, MMMM d'\(daySuffix(for: post.createdAt))', yyyy"
         if let date = post.createdAt {
-            dayLabel.text = dateFormatter.string(from: date)
+            dayer.text = dateFormatter.string(from: date)
         }
 
     }

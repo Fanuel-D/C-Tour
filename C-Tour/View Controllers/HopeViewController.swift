@@ -9,7 +9,7 @@ import UIKit
 
 class HopeViewController: UIViewController {
     
-    @IBOutlet weak var table: UITableView!
+    @IBOutlet weak var tabling: UITableView!
     
     
     let amphitheater = Spot(image: UIImage(named: "amp2") ?? UIImage(), spotName: "The Amphitheater", year: 1890, spotDescription: "When you see it for the first time, it will take your breath away. One of Swarthmore’s most treasured spaces, Scott Outdoor Amphitheater is the site of new students’ first formal gathering as a class, First Collection, and their Last Collection.")
@@ -27,7 +27,7 @@ class HopeViewController: UIViewController {
     private var posts = [Post]() {
         didSet {
             // Reload table view data any time the posts variable gets updated.
-            table.reloadData()
+            tabling.reloadData()
         }
     }
 
@@ -36,9 +36,9 @@ class HopeViewController: UIViewController {
         
         spots = [amphitheater, arboretum, crum, whisper]
 
-        table.delegate = self
-        table.dataSource = self
-        table.allowsSelection = false
+        tabling.delegate = self
+        tabling.dataSource = self
+        tabling.allowsSelection = false
         // Do any additional setup after loading the view.
     }
     
@@ -115,7 +115,7 @@ extension HopeViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "PostCellCopy", for: indexPath) as? PostCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "PostCellCopy", for: indexPath) as? PostCellCopy else {
             return UITableViewCell()
         }
         cell.configure(with: posts[indexPath.row])

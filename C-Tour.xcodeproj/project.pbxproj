@@ -391,10 +391,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M97K665P45;
+				DEVELOPMENT_TEAM = 2BMP7UP965;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "C-Tour/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "App needs access to camera to take photos...";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "\"Your Location is needed to provide a guided accurate service\"";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -406,7 +407,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "fanueldana.C-Tour";
+				PRODUCT_BUNDLE_IDENTIFIER = "fanueldana1.C-Tour";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -421,10 +422,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = M97K665P45;
+				DEVELOPMENT_TEAM = 2BMP7UP965;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "C-Tour/Info.plist";
 				INFOPLIST_KEY_LSApplicationCategoryType = "";
+				INFOPLIST_KEY_NSCameraUsageDescription = "App needs access to camera to take photos...";
 				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "\"Your Location is needed to provide a guided accurate service\"";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -436,7 +438,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "fanueldana.C-Tour";
+				PRODUCT_BUNDLE_IDENTIFIER = "fanueldana1.C-Tour";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

@@ -99,7 +99,8 @@ This app does what any tour guide can do but also more. It enables users to expl
 ### [BONUS] Interactive Prototype
 
 ### Video Walkthrough
-![Project Demo GIF](https://i.imgur.com/BSqBnDr.gif)
+![Alt Text]([https://i.imgur.com/BSqBnDr.gif])
+
 
 ## Schema 
 [This section will be completed in Unit 9]

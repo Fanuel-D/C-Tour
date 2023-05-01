@@ -101,7 +101,9 @@ This app does what any tour guide can do but also more. It enables users to expl
 ### Video Walkthrough
 
 
-![](https://submissions.us-east-1.linodeobjects.com/ios102/Lr8zsw5Y.gif)
+![ghgh](https://submissions.us-east-1.linodeobjects.com/ios102/Lr8zsw5Y.gif)
+
+
 
 ## Schema 
 [This section will be completed in Unit 9]

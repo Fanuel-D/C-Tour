@@ -97,11 +97,13 @@ This app does what any tour guide can do but also more. It enables users to expl
 ### [BONUS] Digital Wireframes & Mockups
 
 ### [BONUS] Interactive Prototype
-
+i.imgur.com
 ### Video Walkthrough
 
 
 ![ghgh](https://i.imgur.com/BSqBnDr.gif)
+
+https://i.imgur.com/BSqBnDr.gif
 
 
 ## Schema 

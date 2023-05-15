@@ -101,11 +101,13 @@ i.imgur.com
 ### Video Walkthrough
 
 
-![ghgh](https://i.imgur.com/BSqBnDr.gif)
-
 <width=100> ![ ](https://i.imgur.com/mlXscyZ.gif)
 
 ![ ](https://i.imgur.com/BSqBnDr.gif)
+
+
+https://github.com/FdD1223/C-Tour-Group--34/assets/110620678/e753c0e0-2a0f-431c-8a53-d2760997089e
+
 
 
 ## Schema 

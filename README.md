@@ -1,5 +1,3 @@
-Original App Design Project - README Template
-===
 
 # C-Tour
 
@@ -14,7 +12,6 @@ Original App Design Project - README Template
 This app does what any tour guide can do but also more. It enables users to explore the a college campus either remotely or in person. It also connects incoming student of a given college. 
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
 - **Category:** Education 
 - **Mobile:** This app would be primarily developed for mobile but would perhaps be just as viable on a computer, such as tinder or other similar apps. Functionality wouldn't be limited to mobile devices, however mobile version could potentially have more features.
 - **Story:** Enables users to explore college campuses either remotely or in person with the help of a virtual assistant. Users who visit the campus in person have the option to post photos and write comments about a specific place on the campus. 

@@ -9,7 +9,7 @@
 
 ## Overview
 ### Description
-This app does what any tour guide can do but also more. It enables users to explore the a college campus either remotely or in person. It also connects incoming student of a given college. 
+This app does what any tour guide can do but also has more to offer. It enables users to explore the a college campus either remotely or in person. It also connects incoming student of a given college. 
 
 ### App Evaluation
 - **Category:** Education 
@@ -25,10 +25,9 @@ This app does what any tour guide can do but also more. It enables users to expl
 
 **Required Must-have Stories**
 
-* User can login
-* User can post a new photo of a location on the campus
-* User can search for a specific place on a college campus
-* User can write a comment on the location
+* Users can login
+* Users can search college campuses found in the US.
+* Users can write comments and post pictures of their experience on campus.
 
 **Optional Nice-to-have Stories**
 
@@ -88,14 +87,11 @@ This app does what any tour guide can do but also more. It enables users to expl
 
 
 ## Wireframes
+
 <img src="YOUR_WIREFRAME_IMAGE_URL" width=600> ![](https://i.imgur.com/ZXRO1MW.jpg)
 
 
-### [BONUS] Digital Wireframes & Mockups
-
-
 ### Video Walkthrough
-
 
 <!-- <width=100> ![ ](https://i.imgur.com/mlXscyZ.gif) -->
 

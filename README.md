@@ -96,8 +96,7 @@ This app does what any tour guide can do but also more. It enables users to expl
 
 ### [BONUS] Digital Wireframes & Mockups
 
-### [BONUS] Interactive Prototype
-i.imgur.com
+
 ### Video Walkthrough
 
 
@@ -110,8 +109,6 @@ https://github.com/FdD1223/C-Tour-Group--34/assets/110620678/e753c0e0-2a0f-431c-
 
 
 
-## Schema 
-[This section will be completed in Unit 9]
 ### Models
 [Add table of models]
 ### Networking

@@ -105,7 +105,7 @@ i.imgur.com
 
 ![ ](https://i.imgur.com/mlXscyZ.gif)
 
-https://i.imgur.com/BSqBnDr.gif
+![ ](https://i.imgur.com/BSqBnDr.gif)
 
 
 ## Schema 

@@ -100,11 +100,3 @@ https://i.imgur.com/BSqBnDr.gif
 
 https://github.com/FdD1223/C-Tour-Group--34/assets/110620678/e753c0e0-2a0f-431c-8a53-d2760997089e
 
-
-
-### Models
-[Add table of models]
-### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
